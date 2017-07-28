@@ -1,0 +1,17 @@
+---
+- hosts: all
+  tasks:
+    - command: "echo 'I AM A DOCKER CONTAINER'"
+
+- hosts: web
+  tasks:
+    - command: "echo 'I AM A WEB HOST'"
+
+- hosts: app
+  tasks:
+    - command: "echo 'I AM APP HOST'"
+
+
+- hosts: db
+  tasks:
+    - command: "echo 'I AM A DB HOST'"
